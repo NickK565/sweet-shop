@@ -1,0 +1,398 @@
+@import __base
+@import __fonts 
+
+$offset: 15px 
+
+//base settings
+
+.fal,.fab
+    font-family: FontAwesome
+
+.order-btn
+    padding: 15px 40px
+    border-radius: 3px;
+    box-shadow: 4.5px 7.8px 25.8px 3.2px rgba(241, 60, 159, 0.2);
+    background-color: #f02995;
+    outline: none;
+    border: none;
+    //text
+    text-transform: uppercase;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+
+.trans-order-btn 
+    padding: 15px 30px;
+    border-radius: 3px;
+    border: solid 2px #f02995;
+    background-color: transparent
+    //text
+    text-transform: uppercase
+    font-family: Poppins;
+    font-size: 16px;
+    color: #f02995;
+
+.main-header-text 
+    font-family: BeautyMountainsPersonalUse;
+    font-size: 66px;
+    letter-spacing: 0.88px;
+    color: #363636;
+
+.header-text 
+    font-family: BeautyMountainsPersonalUse;
+    font-size: 44;
+    letter-spacing: 0.88px;
+    color: #363636;
+
+.description-text 
+    font-family: Poppins;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.18px;
+    color: #939393;
+
+.container
+    +container
+
+//header
+
+.header 
+    +container()
+    padding-top: 40px
+
+.title-cake
+    font-family: Philosopher;
+    font-size: 35px;
+    font-weight: bold;
+    color: #464646;
+    text-decoration: none;
+
+.other-color
+    color: #f13c9f;
+
+.navbar
+    margin-bottom: 220px
+    +flex-wrap(row)
+    justify-content: space-between
+    &-links-item
+        padding:  0 30px
+        font-family: Arimo;
+        font-size: 18px;
+        color: #464646;
+        text-decoration: none
+    &-links-item:hover
+        color: #f02995;
+        transition: 0.2s 
+
+
+.cart
+    margin-bottom: -8px;
+
+.hero
+    display: flex
+    justify-content: space-between;
+    &-main
+        min-width: 36%
+
+.main-header-text
+    padding-bottom: 45px
+    max-width: 100%
+    
+    
+.title-description-text
+    display: block
+    margin-bottom: 50px
+
+.cake
+    max-width: 80%
+    margin-left: 200px
+    margin-top: -150px  
+
+//counter
+
+.counter
+    max-width: 1400px
+    margin: 0 auto
+    padding-top: 130px  
+    +flex-wrap(row)
+    justify-content: space-between
+
+.count-item
+    +flex-wrap(column)
+    padding-top: 30px
+    &-link
+        font-family: Arimo;
+        font-size: 18px;
+        padding: 5px 0
+        text-decoration: none
+        color: #c8c8c8;
+    &-link:hover
+        color: #f02995;
+        text-decoration: underline
+        transition: 0.2s 
+
+.block
+    +flex-wrap(row)
+    &-item
+        width: 150px
+        height: 140px
+        border-radius: 5px
+        box-shadow: -0.8px -2.9px 33.8px 4.2px rgba(90, 170, 212, 0.18);
+        background-color: #f02995; 
+    &-item-2
+        margin: 0 40px
+
+// section discover food
+
+.discover
+    padding-top: 200px 
+    &-description-text 
+        padding: 40px 0
+
+    &-header-text
+        padding-bottom: 30px
+        margin-top: 60px
+        max-width: 50%
+        font-size: 44px
+        
+    &-wrap
+        +flex-wrap(row)
+        justify-content: space-between
+
+.video
+    opacity: left;
+    &-play
+        padding: 180px
+
+
+
+//section gallery
+
+.gallery
+    padding-top: 185px  
+    text-align: center
+    font-size: 44px
+    &-content
+        margin-top: 55px
+    &-trans-order-btn
+        margin-top: 60px
+    
+.gallery-content
+    +flex-wrap(row)
+    padding-right: 30px
+    &-block
+        margin-right: 29px
+        margin-top: 30px
+        border-radius: 10px 10px 0 0 
+        width: 370px;
+        height: 360px;
+        background-color: #f13c9e;
+    
+
+.mini-gallery-content-block:nth-child(5) 
+    margin-right: 1px
+
+.mini-gallery-content-block:nth-child(4)
+    padding: 30px
+    display: flex
+    align-items: flex-end
+    background-color: #df67b8;
+    text-align: left
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: left;
+    color: #ffffff;
+
+.card-description
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    color: #ffffff;
+
+.large-gallery-content-block
+    margin-right: 28px
+    width: 570px;
+    height: 386px;
+    background-color: #f13c9e;
+
+.large-gallery-content-block:nth-child(2)
+    margin-right: 2px
+    width: 570px;
+    height: 386px;
+    background-color: #f13c9e;
+
+// section review
+
+
+.rating-star span
+	padding: 0;
+	font-size: 32px;
+	margin: 0 3px;
+	line-height: 1;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+
+.rating-star > span:before 
+	content: '★';
+
+.rating-star > span.active 
+	color: #000;
+	text-shadow: 1px 1px #000;
+
+//review raiting
+
+.main-review
+    margin: 0 auto
+    +flex-wrap(row)
+    justify-content: center
+    align-items: center
+    align-content: center
+
+.review
+    +container
+    padding-top: 300px
+    +flex-wrap(row)
+    align-content: center
+    justify-content:center
+    align-items: center
+
+
+.reviewer
+    margin-right: 80px
+    &-photo 
+        +flex-wrap(column)
+        align-items: center
+    &-name
+        padding: 15px 0
+        font-family: Poppins;
+        font-size: 25px;
+        font-weight: 500;
+        text-align: center;
+        color: #000000;
+
+.arrows
+    margin-top: 150px  
+    +flex-wrap(row)
+    justify-content: center
+
+.arrow
+    font-family: FontAwesome;
+    font-size: 30px
+    margin: 0 100px
+    color: rgba(0, 0, 0,0.4)
+
+.arrow:hover
+    color:#f13c9e
+    transition: 0.2s
+
+// section order
+
+.order
+    padding-top: 250px
+    font-size: 44px
+    &-info
+        max-width: 430px  
+    &-description-text
+        padding: 40px 0 45px 0
+    &-wrap
+        +flex-wrap(row)
+        justify-content: space-between
+    &-map
+        width: 600px;
+        height: 520px;
+        margin: 0 0 0 161px;
+        background-color: #f02995;
+
+.date-selector,.time-selector
+    +flex-wrap(row)
+    align-items: center
+    max-width: 50%
+
+.location-selector
+    margin-top: 25px
+    margin-bottom: 50px 
+    +flex-wrap(row)
+    align-items: center
+
+.selector
+    border: solid 1px #414141;
+    font-family: Poppins;
+    font-size: 14px;
+    color: #636363;
+    &-1
+        +flex-wrap(row)
+        justify-content: space-between
+        margin-bottom: 25px
+
+.info
+    padding: 20px 
+    &-location
+        padding: 20px
+        padding-right: 250px    
+
+.p
+    padding: 0 15px  
+
+.down
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+
+//footer
+
+.footer
+    background-image: url(../img/bc.png)
+    &-container
+        padding-top: 270px
+        max-width: 1000px   
+        margin: 0 auto;
+    &-wrap
+        padding-bottom: 100px
+        +flex-wrap(row)
+        justify-content: space-evenly
+    &-column
+        +flex-wrap(column)
+    &-cake-link
+        padding: 8px 0
+    &-header-text
+        padding-top: 10px
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 600;
+        color: #484848;
+    &-icon
+        margin-right: 10px
+    &-link-item
+        padding: 10px 0
+        font-family: Poppins;
+        text-decoration: none
+        font-size: 16px;
+        color: #707070;
+
+.copyright
+    text-align: center
+    opacity: 0.4;
+    font-family: Arimo;
+    font-size: 14px;
+    color: rgba(29, 29, 29, 1);
+
+.fab
+    padding: 0 10px
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 2.52px;
+    color: #b9b9b9;
+    &:hover
+        color: #f02995;
+        transition: 0.2s
+    
