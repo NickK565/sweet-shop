@@ -63,6 +63,11 @@ table {
   src: url("../fonts/Beauty Mountains Personal Use.ttf");
 }
 
+@font-face {
+  font-family: BeautyMountainsPersonalUse;
+  src: url("../fonts/Beauty Mountains Personal Use.otf");
+}
+
 .fal, .fab {
   font-family: FontAwesome;
 }
